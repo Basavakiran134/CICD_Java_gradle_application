@@ -4,7 +4,7 @@ pipeline{
         stage("sonar quality check"){
             agent {
                 docker {
-                    image 'gradle'
+                    image 'jdk8-jammy'
                 }
             }
             steps {
